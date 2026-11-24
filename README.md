@@ -1,5 +1,10 @@
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <img alt="Hand-drawn pen-and-ink landscape of mountains and trees" src="assets/banner-light.png" width="100%">
+</picture>
+
 <a href="https://e-portfolio.linustabanao.workers.dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3200&pause=1400&color=00FFC3&center=true&vCenter=true&width=700&height=70&lines=Hi%2C+I%27m+Linus;Information+Systems+Student;Web+Developer;UI%2FUX+Designer;Systems+Thinker">
@@ -19,12 +24,12 @@ I build efficient, scalable digital solutions, from Java MVC systems and Node.js
 
 ## About
 
-- 🎓 BS Information Systems at **De La Salle University** (expected 2028)
-- 📍 Makati City, Philippines
-- 🛠️ Currently building school information systems and mobile and web apps, and digging into network programming with Python
-- 🎨 I also design: UX research, Figma prototypes, and HCI-driven redesigns
-- 📈 Redesigned a school website and grew its daily traffic about 6× (roughly 30 to 180+ daily users)
-- 📫 Open to internships, freelance projects, and full-time roles
+- **Studying:** BS Information Systems at De La Salle University (expected 2028)
+- **Based in:** Makati City, Philippines
+- **Currently:** building school information systems and mobile and web apps, and digging into network programming with Python
+- **Also design:** UX research, Figma prototypes, and HCI-driven redesigns
+- **Results:** redesigned a school website and grew its daily traffic about 6× (roughly 30 to 180+ daily users)
+- **Open to:** internships, freelance projects, and full-time roles
 
 ## Tech stack
 
@@ -88,4 +93,9 @@ _Nothing published yet. Visit the [blog](https://e-portfolio.linustabanao.worker
 
 <div align="center">
 <sub><i>"I try to make more than I do take."</i></sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.png">
+  <img alt="Hand-drawn pen-and-ink strip of trees" src="assets/footer-light.png" width="100%">
+</picture>
 </div>
