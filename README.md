@@ -1,9 +1,6 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-  <img alt="Hand-drawn pen-and-ink landscape of mountains and trees" src="assets/banner-light.png" width="100%">
-</picture>
+<img alt="Hand-drawn pen-and-ink landscape of mountains and pine trees on cobalt blue" src="assets/banner.png" width="100%">
 
 <a href="https://e-portfolio.linustabanao.workers.dev">
   <picture>
@@ -94,8 +91,5 @@ _Nothing published yet. Visit the [blog](https://e-portfolio.linustabanao.worker
 <div align="center">
 <sub><i>"I try to make more than I do take."</i></sub>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.png">
-  <img alt="Hand-drawn pen-and-ink strip of trees" src="assets/footer-light.png" width="100%">
-</picture>
+<img alt="Hand-drawn pen-and-ink strip of pine trees on cobalt blue" src="assets/footer.png" width="100%">
 </div>
