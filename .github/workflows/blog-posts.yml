@@ -1,0 +1,43 @@
+name: Latest blog posts
+
+# Copies your newest published posts from your portfolio's public API into the
+# "Latest from the blog" section of README.md. It does nothing until you set a
+# repository VARIABLE named SITE_URL (Settings > Secrets and variables >
+# Actions > Variables), for example https://e-portfolio.yourname.workers.dev
+
+on:
+  schedule:
+    - cron: "41 4 * * *" # daily, 04:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write # needed to commit the README change
+
+concurrency:
+  group: blog-posts
+  cancel-in-progress: true
+
+jobs:
+  update:
+    if: ${{ vars.SITE_URL != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Refresh the blog list in README.md
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: node scripts/update-blog.mjs
+
+      - name: Commit if something changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh latest blog posts"
+          git push
